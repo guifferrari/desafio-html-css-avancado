@@ -1,0 +1,77 @@
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    color: #fff;
+}
+
+body{
+    background: url('../images/bg-desktop.svg') center center no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    max-height: 80vh;
+}
+
+.cabecalho{
+    padding: 20px;
+}
+
+.main-landing-page{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.informations-landing-page{
+    max-width: 400px;
+    margin-left: 50px;
+}
+
+.informations-landing-page .titulo{
+    margin-top: 60px;
+    font-weight: 600;
+}
+
+.informations-landing-page .p-landing-page{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.informations-landing-page .btn-landing-page{
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.informations-landing-page .btn-landing-page:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+/* .social{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+}
+
+.social .circle-social{
+    border:0.5px solid white;
+    border-radius:100%;
+    background:rgba(0,0,0,0);
+    color:white;
+    width:30px;
+    height:30px;
+    text-align:center;
+    padding: 10px 10px 5px 10px;
+    margin: 7px;
+}
+
+.circle-social i{
+    text-align: center;
+}
+
+.social i{
+ font-size: 1.5rem;
+} */

@@ -7,11 +7,11 @@ html{
 body{
     background: url('../images/bg-desktop.svg') center bottom no-repeat;
     background-color: hsl(257, 40%, 49%);
-    background-size: cover;
-    min-height: 80vh;
+    background-size: contain;
+    min-height: 100vh;
 }
 
-.cabecalho{
+.header{
     padding: 30px 60px;
 }
 
@@ -23,8 +23,7 @@ body{
 
 .main-landing-page{
     gap: 20px;
-    max-height: 70vh;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -38,6 +37,7 @@ body{
 .informations-landing-page .titulo{
     margin-top: 60px;
     font-weight: 600;
+    font-size: 3rem;
 }
 
 .informations-landing-page .p-landing-page{
@@ -88,4 +88,107 @@ body{
 
 .social .circle-social i{
  font-size: 1.5rem;
+}
+
+@media(max-width: 768px){
+
+    body{
+        background: url('../images/bg-mobile.svg') top center no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        background-size: contain;
+        min-height: 100vh;  
+    }
+
+    .header{
+        padding: 15px 30px;
+    }
+    
+    .main-landing-page{
+        padding: 0 30px 0 30px;
+    }
+
+    .main-landing-page img{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .informations-landing-page .titulo{
+        margin-top: 35px;
+    }
+
+    .informations-landing-page .p-landing-page{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .social{
+        padding-bottom: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 425px){
+
+    body{
+        background: url('../images/bg-mobile.svg') top center no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        background-size: contain;
+        min-height: 100vh;
+    }
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .logo img{
+        max-width: 120px;
+    }
+
+
+    .main-landing-page{
+        flex-direction: column;
+    }
+
+    .main-landing-page img{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .informations-landing-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:  0 auto;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .informations-landing-page .titulo{
+        font-size: 2.2rem;
+    }
+
+    .social{
+        justify-content: center;
+        padding: 30px 0 20px 0
+    }
+}
+
+@media(max-width:375px){
+    .main-landing-page{
+        padding: 0 15px 0 15px;
+    }
+
+    .informations-landing-page{
+        padding: 25px;
+    }
 }

@@ -7,12 +7,16 @@ html{
 body{
     background: url('../images/bg-desktop.svg') center bottom no-repeat;
     background-color: hsl(257, 40%, 49%);
-    background-size: contain;
+    background-size: cover;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .header{
-    padding: 30px 60px;
+    padding: 30px 60px 50px 60px;
 }
 
 .logo{
@@ -30,12 +34,13 @@ body{
 }
 
 .informations-landing-page{
-    max-width: 430px;
+    max-width: 510px;
     margin-left: 50px;
 }
 
 .informations-landing-page .titulo{
     margin-top: 60px;
+    max-width: 400px;
     font-weight: 600;
     font-size: 3rem;
 }
@@ -44,6 +49,7 @@ body{
     margin-top: 30px;
     margin-bottom: 30px;
     font-family: 'Open Sans', sans-serif;
+    line-height: 3rem
 }
 
 .informations-landing-page .btn-landing-page{
@@ -52,6 +58,7 @@ body{
     background-color: #fff;
     border-radius: 50px;
     transition: 0.3s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .informations-landing-page .btn-landing-page:hover{
@@ -71,8 +78,8 @@ body{
     border-radius:100%;
     background:rgba(0,0,0,0);
     color:white;
-    width:30px;
-    height:30px;
+    width:50px;
+    height:50px;
     margin: 7px;
     display: flex;
     align-items: center;
@@ -87,7 +94,33 @@ body{
 }
 
 .social .circle-social i{
- font-size: 1.5rem;
+ font-size: 2.5rem;
+}
+
+
+@media(max-width: 1024px){
+    
+    .main-landing-page img{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .informations-landing-page{
+        margin-left: 30px;
+        font-size: 1.7rem;
+    }
+
+    .informations-landing-page .titulo{
+        margin-top: 40px;
+        max-width: 400px;
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .informations-landing-page .p-landing-page{
+        margin-top: 10px;
+    }
+    
 }
 
 @media(max-width: 768px){
@@ -100,7 +133,7 @@ body{
     }
 
     .header{
-        padding: 15px 30px;
+        padding: 0 15px 30px;
     }
     
     .main-landing-page{
@@ -123,19 +156,11 @@ body{
 
     .social{
         padding-bottom: 10px;
-        margin-top: 20px;
+        margin-top: 60px;
     }
 }
 
 @media(max-width: 425px){
-
-    body{
-        background: url('../images/bg-mobile.svg') top center no-repeat;
-        background-color: hsl(257, 40%, 49%);
-        background-size: contain;
-        min-height: 100vh;
-    }
-    
     .header{
         display: flex;
         flex-direction: column;

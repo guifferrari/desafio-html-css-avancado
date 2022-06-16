@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Gif
 
-[<img src="../src/gif-layout-huddle-page.gif" alt="gif da tela inicial do projeto xyz">](https://guifferrari.github.io/huddle-landing-page/)
+[<img src="./src/gif-layout-huddle-page.gif" alt="gif da tela inicial do projeto xyz">](https://guifferrari.github.io/huddle-landing-page/)
 
 ### Built with
 
